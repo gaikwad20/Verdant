@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crop Disease Predictor</h1>
+            <p>Predict crop diseases based on symptoms, environmental conditions, and crop history</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="form-group">
+                    <label for="crop-select">Select Crop:</label>
+                    <select id="crop-select">
+                        <option value="">-- Select a crop --</option>
+                        <option value="Rice">Rice</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Corn">Corn</option>
+                        <option value="Tomato">Tomato</option>
+                        <option value="Potato">Potato</option>
+                        <option value="Soybean">Soybean</option>
+                        <option value="Cotton">Cotton</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Grape">Grape</option>
+                        <option value="Banana">Banana</option>
+                    </select>
+                </div>
+
+                <div class="symptoms-section">
+                    <h3>Symptoms</h3>
+                    <div class="checklist" id="symptoms-checklist">
+                        <!-- Symptoms will be loaded dynamically -->
+                    </div>
+                </div>
+
+                <div class="env-conditions-section">
+                    <h3>Environmental Conditions</h3>
+                    <div class="checklist" id="env-conditions-checklist">
+                        <!-- Environmental conditions will be loaded dynamically -->
+                    </div>
+                </div>
+
+                <div class="history-section">
+                    <h3>Crop History</h3>
+                    <div class="checklist" id="history-checklist">
+                        <!-- History factors will be loaded dynamically -->
+                    </div>
+                </div>
+
+                <button id="predict-btn">Predict Disease</button>
+            </div>
+
+            <div class="results-section" id="results-section">
+                <h2>Prediction Results</h2>
+                <div id="prediction-results">
+                    <p class="placeholder-text">Select your crop and conditions to see predictions</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Crop Disease Prediction System</p>
+        </footer>
+    </div>
+
+    <script src="dataset.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
